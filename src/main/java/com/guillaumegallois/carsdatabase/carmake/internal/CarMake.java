@@ -1,12 +1,12 @@
 package com.guillaumegallois.carsdatabase.carmake.internal;
 
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.time.LocalDate;
 
@@ -16,11 +16,17 @@ import java.time.LocalDate;
 @Document(collection = "car_make")
 public class CarMake {
 
+    @Field("_id")
     private ObjectId objectId;
+    @Field("id_car_make")
     private Integer idCarMake;
+    @Field("name")
     private String name;
-    private LocalDate dateCreate;
-    private LocalDate dateUpdate;
+    @Field("date_create")
+    private Integer dateCreate;
+    @Field("date_update")
+    private Integer dateUpdate;
+    @Field("id_car_type")
     private Integer idCarType;
 
 }

@@ -1,8 +1,8 @@
 package com.guillaumegallois.carsdatabase.carmake;
 
 import com.guillaumegallois.carsdatabase.carmake.internal.CarMake;
-import com.guillaumegallois.carsdatabase.carmake.CarMakeRepository;
-import com.guillaumegallois.carsdatabase.carmake.CarMakeMapper;
+import com.guillaumegallois.carsdatabase.carmake.internal.CarMakeRepository;
+import com.guillaumegallois.carsdatabase.carmake.internal.CarMakeMapper;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

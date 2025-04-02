@@ -1,4 +1,4 @@
-package com.guillaumegallois.carsdatabase.carmake;
+package com.guillaumegallois.carsdatabase.carmake.internal;
 
 import com.guillaumegallois.carsdatabase.carmake.internal.CarMake;
 import org.springframework.data.mongodb.repository.MongoRepository;
