@@ -37,11 +37,13 @@ class CarModelMapperTest {
     @Test
     void toCarModel() {
         // Given
-        CarModelDTO carModelDTO = new CarModelDTO();
-        carModelDTO.setIdCarMake(1);
-        carModelDTO.setIdCarType(2);
-        carModelDTO.setIdCarModel(3);
-        carModelDTO.setName("Test Model");
+        CarModelDTO carModelDTO = CarModelDTO.builder()
+                .objectId("1234567890abcdef12345678")
+                .name("Test Model")
+                .idCarMake(1)
+                .idCarType(2)
+                .idCarModel(3)
+                .build();
 
         // When
         CarModel carModel = carModelMapper.toCarModel(carModelDTO);
